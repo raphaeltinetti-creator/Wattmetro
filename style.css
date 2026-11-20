@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F172A;
+    font-family: "Inter", sans-serif;
+
+}
+
+.cabeca {
+    background-color: #1E293B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.titulo {
+    color: #FACC15;
+    font-family: "Orbitron", sans-serif;
+    font-size: 42px;
+}
+
+.cartao {
+    background-color: #1E293B;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 30px;
+    margin: auto;
+}
+#num1, #num2, #num3, #num4 , #band {
+    background-color: #0F172A;
+    border: 1px solid #334155;
+    color: #E2E8F0 ;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+    font-family: inherit;
+}
+
+label {
+    color: #E2E8F0;
+    font-size: 19px;
+}
+
+#num1:focus, #num2:focus, #num3:focus, #num4:focus, #band:focus{
+    border-color: #FACC15;
+    outline: none;
+}
+
+#botao {
+    background-color: #FACC15;
+    color: #0F172A;
+    font-family: inherit;
+    font-size: 22px;
+    border: 2px solid  #FACC15;
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 300px;
+    width: 70%;
+}
+
+#botao:hover {
+    background-color: #EAB308;
+    cursor: pointer;
+}
+
+#resultado {
+    color: #E2E8F0;
+}
+
+strong {
+    color: #FACC15;
+}
+
+#erro {
+    color: #F87171;
+}
+
+#aviso {
+    color: #FB923C;
+}
+
+#economia {
+    color: #4ADE80;
+}
+
+#economia, #aviso, #resultado, #erro {
+    font-family: inherit;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 52px;
+}
+
+.principal {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.campos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 35px;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 70%;
+    max-width: 400px;
+}
+
+
+/* =====    RESPONSIVIDADE    ===== */
+
+/* ===== Tablets (até 1024px) ===== */
+@media (max-width: 1024px) {
+    .principal {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .grupo {
+        width: 85%;
+    }
+
+    #economia, #aviso, #resultado, #erro {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+}
+
+/* ===== Celulares (até 600px) ===== */
+@media (max-width: 600px) {
+    .cabeca {
+        height: 100px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .principal {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .cartao {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .campos {
+        gap: 25px;
+    }
+
+    .grupo {
+        width: 100%;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    #num1, #num2, #num3, #num4, #band {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    #botao {
+        width: 100%;
+        max-width: none;
+        font-size: 20px;
+    }
+
+    #economia, #aviso, #resultado, #erro {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}
